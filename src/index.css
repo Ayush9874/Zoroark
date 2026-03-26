@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] antialiased;
+  }
+}
+
+@keyframes marching-ants {
+  from {
+    stroke-dashoffset: 16;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flowLine {
+  0% { stroke-dasharray: 0 100; opacity: 0; }
+  100% { stroke-dasharray: 100 0; opacity: 1; }
+}
+
+.react-flow__handle {
+  @apply !w-2 !h-2 !bg-zinc-700 !border-none;
+}
+
+.react-flow__node {
+  @apply !bg-transparent !border-none !p-0 !shadow-none;
+}
+
+.react-flow__controls {
+  @apply !bg-zinc-900 !border-zinc-800 !rounded-lg !overflow-hidden !shadow-2xl;
+}
+
+.react-flow__controls-button {
+  @apply !border-zinc-800 !fill-zinc-500 hover:!bg-zinc-800 transition-colors;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #27272a;
+}
+
