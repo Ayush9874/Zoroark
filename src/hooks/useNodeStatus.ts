@@ -1,4 +1,4 @@
-import { usePipelineStore } from '../store/pipelineStore';
+import { usePipelineStore } from '../store/pipelineStore.ts';
 
 export function useNodeStatus(nodeId: string) {
   return usePipelineStore((state) => state.nodeStatus[nodeId] || 'pending');

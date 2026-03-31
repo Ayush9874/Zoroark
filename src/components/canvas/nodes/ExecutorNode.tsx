@@ -36,7 +36,7 @@ export function ExecutorNode({ data }: any) {
       </div>
       
       <div className="text-sm font-medium text-white">{data.label}</div>
-      <div className="text-[10px] font-mono text-zinc-500 mt-1">{data.file}</div>
+      {data.file && <div className="text-[10px] font-mono text-zinc-500 mt-1">{data.file}</div>}
       
       {status === 'running' && (
         <div className="mt-3 h-1 w-full bg-zinc-800 rounded-full overflow-hidden">
