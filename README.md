@@ -285,6 +285,9 @@ MIT License - see LICENSE file for details
 
 Ayush Bhattacharyya - [@Ayush9874](https://github.com/Ayush9874)
 
+## collaborators
+
+Soham Ghosh -[@sohiofficial](https://github.com/sohiofficial)
 ---
 
 **Named after Zoroark** 🔥 — the Pokémon known for creating illusions and hidden depths, reflecting the project's ability to orchestrate complex, multi-layered AI workflows.
